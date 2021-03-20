@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="node_modules/swiper/swiper-bundle.min.css">
+  <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="res/css/index.css">
+  <link href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css" rel="stylesheet">
+
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Nuwx0IfIA7EGim8z3QiFYqPdhCwD8owv"></script>
+  <style>
+    /* 轮播图 */
+  .banner1 {
+    background: url("res/images/1.jpeg");
+  }
+  .banner2 {
+    background: url("res/images/2.jpeg");
+  }
+  .banner3 {
+    background: url("res/images/3.jpeg");
+  }
+  .ban {
+    z-index: 100;
+    margin-top: 20px;
+    padding: 20% 20%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+          aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <!-- <img src="imgs/logo.gif" width="140" height="70" alt="logo" /> -->
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-left">
+          <li class="act">
+            <a href="#home">首页</a>
+          </li>
+          <li>
+            <a href="#battle">赛事预约</a>
+          </li>
+          <li>
+            <a href="#news">游戏资讯</a>
+          </li>
+          <li>
+            <a href="#about">关于我们</a>
+          </li>
+          <li>
+            <a href="#ranking">天梯榜</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li role="presentation">
+            <a href="#register" data-toggle="modal" data-target="#register">登录</a>
+          </li>
+          <li role="presentation">
+            <a href="#login" data-toggle="modal" data-target="#login">注册</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+  <!-- 轮播图 -->
+  <section id="home">
+    <div class="swiper-container align-items-center justify-content-center">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="banner1 ban">
+            <h1>王者荣耀</h1>
+            <p>
+              《王者荣耀》是全球首款5V5英雄公平对战手游，腾讯最新MOBA手游大作！ 作为一款MOBA类游戏，
+              <br/> 《王者荣耀》特bai色多多，在同类的游戏中可谓是一枝独秀，艳压全场。
+            </p>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <a class="btn btn-default" href="#" role="button">在线约人</a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-default" href="#" role="button">寻觅队友</a>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <!-- <img src="res/images/1.jpeg" alt="" class="img-responsive"> -->
+        </div>
+        <div class="swiper-slide">
+          <div class="banner2 ban">
+            <h1>梦想新大陆</h1>
+            <p>
+              穿越幽深静谧的亚特兰，跨过自由冒险的海螺湾，爱情岛的薰衣草花田又会带给你什么样的梦幻奇遇呢？
+              <br /> 半熟奇遇社交，许你此生温暖。策略回合过招，邀你酣畅激战，上千宠物任你挑选！
+            </p>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <a class="btn btn-default" href="#" role="button">在线约人</a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-default" href="#" role="button">寻觅队友</a>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <!-- <img src="res/images/2.jpeg" alt="" class="img-responsive"> -->
+        </div>
+        <div class="swiper-slide">
+          <div class="banner3 ban">
+            <h1>和平精英</h1>
+            <p>
+              未来，和平成为世界主流。但出于战略意义上的考虑，以及训练成果考核的需要，
+              <br /> 各国约定：每隔一段时间，便进行一场世界范围内的联合军事演习。并以此挑选出“和平精英”。
+            </p>
+            <div class="col-md-3"></div>
+            <div class="col-md-3">
+                <a class="btn btn-default" href="#" role="button">在线约人</a>
+            </div>
+            <div class="col-md-3">
+                <a class="btn btn-default" href="#" role="button">寻觅队友</a>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <!-- <img src="res/images/3.jpeg" alt="" class="img-responsive"> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 登录 -->
+  <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">用户登录</h4>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label>用户名</label>
+              <input type="text" class="form-control" placeholder="请输入用户名">
+            </div>
+            <div class="form-group">
+              <label>用户邮箱</label>
+              <input type="email" class="form-control" placeholder="请输入用户邮箱">
+            </div>
+            <div class="form-group">
+              <label>用户密码</label>
+              <input type="password" class="form-control" placeholder="请输入密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-danger">登录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 注册 -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">用户注册</h4>
+        </div>
+        <div class="modal-body">
+          <form action="">
+            <div class="form-group">
+              <label>用户名</label>
+              <input type="text" class="form-control" placeholder="请输入用户名">
+            </div>
+            <div class="form-group">
+              <label>用户邮箱</label>
+              <input type="email" class="form-control" placeholder="请输入用户邮箱">
+            </div>
+            <div class="form-group">
+              <label>用户密码</label>
+              <input type="password" class="form-control" placeholder="请输入密码">
+            </div>
+            <div class="form-group">
+              <label>确认用户密码</label>
+              <input type="password" class="form-control" placeholder="请再次输入密码">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+          <button type="button" class="btn btn-danger">注册</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 赛事预约 -->
+  <section id="battle">
+    <div class="container">
+      <div class="row col-md-12">
+        <h1 class="text-center">校园赛事，一手资讯</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6 wow fadeInLeft">
+          <a href="#">
+            <img src="res/images/4.png" alt="battle" class="img-responsive" />
+          </a>
+        </div>
+        <div class="col-md-6 wow fadeInRight">
+          <h2>和平精英战神娱乐赛开赛</h2>
+          <p>随着和平精英2020 PEC圆满收官，迪丽热巴、华晨宇、王一博、杨超越（按姓名首字母排序）在和平精英开启第一枪的同时， 和平精英官方发布了一套新的主题皮肤“大竞牛”皮肤，奈何新皮肤却久久未能正式和玩家见面；但是从今天开始，细心的水友发现，
+            从12月11日0点开始，大竞牛皮肤正式在军需商店正式上线了。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 游戏资讯 -->
+  <section id="news">
+    <div class="container">
+      <div class="row wow fadeInUp">
+        <div class="col-md-12">
+          <h1 class="text-center">最新资讯，应有尽有</h1>
+        </div>
+        <div class="col-md-4 news-item">
+          <a href="">
+            <img src="res/images/5.jpeg" alt="swift" class="img-responsive">
+            <span>王者荣耀新皮肤，“风雨雷雪”</span>
+          </a>
+        </div>
+        <div class="col-md-4 news-item">
+          <a href="">
+            <img src="res/images/6.jpeg" alt="swift" class="img-responsive">
+            <span>王者荣耀新皮肤，“风雨雷雪”</span>
+          </a>
+        </div>
+        <div class="col-md-4 news-item">
+          <a href="">
+            <img src="res/images/7.jpeg" alt="swift" class="img-responsive">
+            <span>和平精英封烟小技巧</span>
+          </a>
+        </div>
+        <div class="col-md-4 news-item">
+          <a href="">
+            <img src="res/images/8.jpeg" alt="swift" class="img-responsive">
+            <span>《梦想新大陆》新手开局小攻略</span>
+          </a>
+        </div>
+        <div class="col-md-4 news-item">
+          <a href="">
+            <img src="res/images/9.jpeg" alt="swift" class="img-responsive">
+            <span>穿越火线手游，鹰眼排位B包点教一打五</span>
+          </a>
+        </div>
+        <div class="col-md-4 news-item">
+          <a href="">
+            <img src="res/images/10.jpeg" alt="swift" class="img-responsive">
+            <span>《QQ飞车》手游，全民雷诺</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 关于我们 -->
+  <section id="about">
+    <div class="mask">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 wow fadeInLeft">
+            <h2><span class="glyphicon glyphicon-send item-icon"></span>联系我们</h2>
+            <p class="desc">觅竞是一款集对战、交友、游戏策列一体化的网页，旨在帮助玩家增添对战乐趣，我们诚挚地欢迎各位来函、来电、与我们洽谈, 展开更多丰富的合作，共赢未来！若需进行商务合作，可以通过以下方式联系我们：</p>
+            <address>
+              <p>
+                <span class="glyphicon glyphicon-home item-icon"></span>地址:成都市郫都区郫县中信大道二段1号</p>
+              <p>
+                <span class="glyphicon glyphicon-phone-alt item-icon"></span>联系电话：12345678910</p>
+              <p>
+                <span class="glyphicon glyphicon-envelope item-icon"></span>邮箱:AirHua-byte@163.com</p>
+            </address>
+          </div>
+          <div class="col-md-6 wow fadeInRight">
+            <form action="index.html" method="post">
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="您的姓名" />
+              </div>
+              <div class="col-md-6">
+                <input type="email" class="form-control" placeholder="您的邮箱" />
+              </div>
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="标题" />
+              </div>
+              <div class="col-md-12">
+                <textarea rows="5" class="form-control" placeholder="留言内容"></textarea>
+              </div>
+              <div class="col-md-8">
+                <input type="submit" class="form-control" placeholder="提交" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- map -->
+  <div id="allmap"></div>
+  <!--footer-->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-ms-12">
+          <p class="text-center">&copy; Copyright2003-2021 AirHua-byte　建议使用IE8.0,1024*768以上浏览</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
+<script src="node_modules/swiper/swiper-bundle.js"> </script>
+<script src="https://cdn.bootcss.com/wow/1.1.2/wow.js"></script>
+<script src="res/js/jquery.singlePageNav.min.js"></script>
+<script>
+  var mySwiper = new Swiper('.swiper-container', {
+    loop: true, // 循环模式选项
+    effect: 'fade',
+
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    autoplay: {
+      delay: 5000,
+      stopOnLastSlide: false,
+      disableOnInteraction: false,
+    },
+  })
+
+  var map = new BMap.Map('allmap');
+  map.centerAndZoom(new BMap.Point(103.892736,30.793023), 18);
+
+  var mapStyle = {
+    features: ["road", "building", "water", "land"],//隐藏地图上的poi
+    style: "dark"  //设置地图风格为高端黑
+  }
+  map.setMapStyle(mapStyle);
+  // map.enableScrollWheelZoom(true);
+
+  function checkhHtml5() {
+    if (typeof (Worker) === "undefined") {
+      if (navigator.userAgent.indexOf("MSIE 9.0") <= 0) {
+        alert("定制个性地图示例：IE9以下不兼容，推荐使用百度浏览器、chrome、firefox、safari、IE10");
+      }
+
+    }
+  }
+  checkhHtml5(); 
+
+  $('.nav').singlePageNav({
+        offset: 70
+    });
+
+  new WOW().init();
+</script>
+
+</html>

@@ -1,2 +1,2 @@
 # CDTU-game
-A subject of competition project
+华迪杯觅竞前端部分代码。
